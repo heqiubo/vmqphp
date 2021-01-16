@@ -283,7 +283,7 @@ class Index
 
         if ($isHtml == 1) {
 
-            echo "<script>window.location.href = '${$_SERVER['HTTP_HOST']}/payPage/pay.html?orderId=" . $orderId . "'</script>";
+            echo "<script>window.location.href = '".$_SERVER['HTTP_HOST']."/payPage/pay.html?orderId=" . $orderId . "'</script>";
 
         } else {
             $time = Db::name("setting")->where("vkey", "close")->find();
